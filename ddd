@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Wearables — Tecnologia de Vestir do Futuro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <header>
+    <div class="logo">NextGen Wearables</div>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#diferenciais">Diferenciais</a>
+      <a href="#contato" class="btn-nav">Garantir Ofertas</a>
+    </nav>
+  </header>
+
+  <!-- SEÇÃO PRINCIPAL (HERO) -->
+  <section class="hero">
+    <h1>Conecte seu corpo à próxima geração de tecnologia</h1>
+    <p>Conheça nossa linha completa de dispositivos de vestuário inteligente e controle o mundo com um olhar, um toque ou um gesto.</p>
+    <a href="#produtos" class="btn-principal">Conhecer a Linha</a>
+  </section>
+
+  <!-- SEÇÃO DOS 3 PRODUTOS -->
+  <section id="produtos" class="produtos-section">
+    <h2>Nossos Dispositivos Wearables</h2>
+    <div class="cards-container">
+      
+      <!-- PRODUTO 1: VisionAR Glass -->
+      <div class="card">
+        <div class="card-tag">Display</div>
+        <h3>👓 VisionAR Glass</h3>
+        <h4>Óculos de Realidade Aumentada Ultraleves</h4>
+        <p>Óculos inteligentes com exibição de GPS, notificações e tradução de idiomas em tempo real diretamente nas suas lentes.</p>
+        <button class="btn-card" onclick="selecionarProduto('VisionAR Glass')">Tenho Interesse</button>
+      </div>
+
+      <!-- PRODUTO 2: PulseTouch Pro -->
+      <div class="card">
+        <div class="card-tag">Treino & Games</div>
+        <h3>⌚ PulseTouch Pro</h3>
+        <h4>Pulseira Háptica para Treinamento e Games</h4>
+        <p>Wearables de pulso que emitem feedback tátil e vibrações direcionais para jogos imersivos e treinos de alta performance.</p>
+        <button class="btn-card" onclick="selecionarProduto('PulseTouch Pro')">Tenho Interesse</button>
+      </div>
+
+      <!-- PRODUTO 3: AuraRing Control -->
+      <div class="card">
+        <div class="card-tag">Gestos</div>
+        <h3>💍 AuraRing Control</h3>
+        <h4>Anel de Controle por Gestos</h4>
+        <p>Anel inteligente que permite controlar apresentações, mídias e dispositivos da sua casa inteligente usando apenas gestos no ar.</p>
+        <button class="btn-card" onclick="selecionarProduto('AuraRing Control')">Tenho Interesse</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE DIFERENCIAIS -->
+  <section id="diferenciais" class="diferenciais-section">
+    <h2>Por que escolher a NextGen?</h2>
+    <div class="diferenciais-grid">
+      <div class="item-diferencial">
+        <span>⚡</span>
+        <h3>Bateria de Larga Duração</h3>
+        <p>Autonomia para o dia todo com recarga ultra-rápida por indução.</p>
+      </div>
+      <div class="item-diferencial">
+        <span>🔒</span>
+        <h3>Privacidade Total</h3>
+        <p>Seus dados biométricos e de navegação são criptografados de ponta a ponta.</p>
+      </div>
+      <div class="item-diferencial">
+        <span>📱</span>
+        <h3>Ecossistema Integrado</h3>
+        <p>Sincronização perfeita entre os três dispositivos e com seu smartphone.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE PRÉ-VENDA / CONTATO -->
+  <section id="contato" class="formulario-section">
+    <h2>Garanta Acesso Antecipado</h2>
+    <p>Escolha o dispositivo e cadastre-se para receber descontos de pré-venda.</p>
+    <form id="form-prevenda">
+      <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+      <input type="email" id="email" placeholder="Seu Melhor E-mail" required>
+      <select id="produto-interesse" required>
+        <option value="">Selecione o Produto de Interesse</option>
+        <option value="VisionAR Glass">VisionAR Glass</option>
+        <option value="PulseTouch Pro">PulseTouch Pro</option>
+        <option value="AuraRing Control">AuraRing Control</option>
+        <option value="Combo Completo">Combo Completo (Os 3 Dispositivos)</option>
+      </select>
+      <button type="submit" class="btn-principal">Garantir Meu Desconto</button>
+    </form>
+    <div id="mensagem-sucesso" class="hidden">
+      🎉 Cadastro realizado com sucesso! Em breve enviaremos os detalhes no seu e-mail.
+    </div>
+  </section>
+
+  <!-- RODAPÉ DA PÁGINA -->
+  <footer>
+    <p>&copy; 2026 NextGen Wearables — Prof. Danilo Bezerra. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
